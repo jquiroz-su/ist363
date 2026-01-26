@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+     img {
+  display: block;
+  margin: 5px auto;
+  width: 120px;
+  height: 120px;
+  animation-duration: 2s;
+  animation-name: loading;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+ /* ^^ play at same speed from beginning to end */
+}
+
+@keyframes loading {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}   
+    </style>
+</head>
+<body>
+    <img src="https://laferger.github.io/ist363/images/loading.png" alt="loading" class="loading">
+    
+</body>
+</html>
