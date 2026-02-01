@@ -1,0 +1,14 @@
+%base-style {
+    font-family: "Arial", sans-serif;
+    color: #333;
+}
+
+.header {
+    @extend %base-style;
+    font-size: 24px;
+}
+
+.footer {
+    @extend %base-style;
+    font-size: 16px;
+}

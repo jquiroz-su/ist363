@@ -1,0 +1,166 @@
+@use "partials/mixins" as *;
+@use "partials/reset" as *;
+@use "partials/variables" as *;
+
+body {
+    background: white;
+    font-family: $font-type;
+    color: $text-color;
+}
+
+.header {
+    background: $orange;
+    text-align: center;
+    padding: 1rem;
+
+    h1 {
+        color: white;
+        font-size: 25px;
+        margin-bottom: 1rem;
+    }
+    
+    nav {
+        @include flex-center;
+        word-spacing: 12px;
+
+        a {
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: scale(1.2);
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+%recipe-cards {
+    background-color: white;
+    border-radius: $radius;
+    overflow: hidden;
+    text-align: center;
+    color: $melon;
+    box-shadow: $shadow;
+}
+
+.top {
+    @include sections;
+    @include padding;
+}
+
+.top h2 {
+    margin: 0;
+}
+
+.recipe-cards {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.card {
+    @extend %recipe-cards;
+    flex-shrink: 0;
+
+
+    img {
+        height: 140px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    p {
+        padding: 1rem;
+        font-weight: bold;
+    }
+}
+
+.newsletter {
+    background: $lime;
+    max-width: $max-width;
+    @include padding;
+    border-radius: $radius;
+    text-align: center;
+    box-shadow: $shadow;
+
+    input[type="email"] {
+    width: 320px;
+    height: 35px;
+    border-radius: $radius;
+    border: 1px solid $orange;
+    }
+}
+
+.about {
+    @include padding;
+    text-align: center;
+
+}
+
+.about img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: $radius;
+}
+
+.footer {
+    background: $mint;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+
+    h3 {
+        word-spacing: 12px;
+        font-weight: 500;
+        font-size: medium;
+    }
+}
+
+button {
+    display: inline-block;
+    background-color: $orange;
+    border-radius: $radius;
+    height: 35px;
+    width: 100px;
+    color: white;
+    border: none;
+}
+
+h2 {
+    color: $melon;
+}
+
+@media (max-width: 768px) { 
+  .top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .recipe-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .card {
+    width: 100%; 
+    max-width: none; 
+  }
+
+  .card img {
+    height: 300px;
+  }
+
+  .newsletter form {
+    flex-direction: column; 
+    gap: 0.5rem;
+  }
+}

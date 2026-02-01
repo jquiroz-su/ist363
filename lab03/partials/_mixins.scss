@@ -1,0 +1,16 @@
+@mixin flex-center {
+    align-items: center;
+}
+
+@mixin padding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 15px;
+}
+
+@mixin sections {
+    display: flex;
+    align-items: flex-start; 
+    gap: 2rem;
+    max-width: 100%;
+}
