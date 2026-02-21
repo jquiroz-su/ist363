@@ -1,0 +1,9 @@
+$primary: #951c85;
+$light: #fbf5e5;
+$warning: #1ba69c;
+
+@import '../bootstrap-modules/node_modules/bootstrap/scss/bootstrap.scss';
+
+.navbar {
+    color: $light;
+}
