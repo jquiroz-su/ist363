@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Otto's Website</title>
+        <link rel = "stylesheet" href = "styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css"/>
+    </head>
+    <body>
+        
+        <!-- Mobile top bar -->
+        <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+            <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+        </div>
+
+        <!-- Desktop top bar -->
+        <div class="top-bar" id="responsive-menu">
+            <div class="top-bar-left">
+                <h1 class="site-title">Website Name</h1>
+            </div>
+            <div class="top-bar-right">
+                <ul class="menu">
+                    <li><a href="#home">Link</a></li>
+                    <li><a href="#about">Link</a></li>
+                    <li><a href="#gallery">Link</a></li>
+                    <li><a href="#funfacts">Link</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <main>
+            <!-- Content area featuring large image with accompanying text.:Jareline -->
+            <div class="grid-container">
+                <div class="grid-x grid-margin-x align-top">
+                    <div class="cell small-12 medium-6">
+                        <div class="orbit" role="region" aria-label="History of Otto Photos" data-orbit data-options="autoPlay: false; animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+                            <div class="orbit-wrapper">
+                                <div  class="orbit-controls">
+                                    <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                                    <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                                </div>
+                                <ul class="orbit-container">
+                                    <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                            <img class="orbit-image" src="images/otto_fans.png" alt="Otto on Bus">
+                                        </figure>
+                                    </li>
+                                    <li class="orbit-slide">
+                                        <figure class="orbit-figure">
+                                            <img class="orbit-image" src="images/warrior_statue.png" alt="Otto Cheering">
+                                        </figure>
+                                    </li>
+                                    <li class="orbit-slide">
+                                        <figure class="orbit-figure">
+                                            <img class="orbit-image" src="images/otto_cheerleading.png" alt="Otto at the Dome">
+                                        </figure>
+                                    </li>
+                                    <li class="orbit-slide">
+                                        <figure class="orbit-figure">
+                                            <img class="orbit-image" src="images/otto_fame.png" alt="Otto at the Dome">
+                                        </figure>
+                                    </li>
+                                </ul>
+                            </div>
+                            <nav class="orbit-bullets">
+                                <button class="is-active" data-slide="0"></button>
+                                <button data-slide="1"></button>
+                                <button data-slide="2"></button>
+                                <button data-slide="2"></button>
+                            </nav>
+                        </div> 
+                    </div>      
+                    <div class="cell small-12 medium-6">
+                      <h3>A Brief History on Otto</h3>
+                      <p>Before Otto, Syracuse University's mascot was the Saltine Warrior, a Native American character
+                        that originated from a student newspaper hoax in 1928. For obvious reasons, the Saltine Warrior was
+                        retired in 1978 after Native American students petioned for its removal. A Roman Gladiator
+                        briefly took its place, but fans largely rejected the idea. The orange character first emerged in the
+                        early 1980s after SU cheerleader Eric Heath designed it. The name "Otto" wasn't chosen until the summer
+                        of 1990 at a cheerleading camp in Tennessee, beating the name "Opie." It wasn't until 1995 that Otto the
+                        Orange was recognized by Chancellor Buzz Shaw as the official mascot of Syracuse University. 
+                      </p>
+                      <h5>Fun Facts:</h5>
+                      <ul>
+                        <li>His costume weights 10 pounds</li>
+                        <li>Loves golf cart rides</li>
+                        <li>Inducted into the Mascot Hall of Fame in 2023 </li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+
+            <section>
+                <!-- A section with at least 3 images laid out in a row, each with a title underneath :Brian-->
+            </section>
+
+
+
+        </main>
+
+        <footer>
+            <div class="grid-container">
+                <div class="grid-x grid-margin-x">
+                    <div class="cell small-12 medium-6">
+                        <h4>About Otto</h4>
+                        <p>Otto the Orange is the beloved mascot of Syracuse University. 
+                            Known for his energy and spirit, Otto has been cheering on the 
+                            Orange since 1995!</p>
+                    </div>
+                    <div class="cell small-12 medium-6">
+                        <h4>Syracuse University</h4>
+                        <p>📍 Syracuse, NY</p>
+                        <p>🌐 <a href="https://www.syracuse.edu" target="_blank">syracuse.edu</a></p>
+                        <p>🏈 <a href="https://cuse.com" target="_blank">cuse.com</a></p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2026. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $(document).foundation();
+            });
+        </script>
+
+    </body>
+</html>
