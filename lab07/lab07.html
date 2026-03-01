@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 07</title>
+</head>
+<body>
+    <script>
+        // #1
+        let favNumber = 8;
+        console.log("My favorite number is " + favNumber + ".");
+
+        // #2
+        let favoriteFoods = ["tacos Al Pastor", "jajangmyeon", "chicken riggies", "kbbq"];
+        console.log(favoriteFoods[1]);
+        favoriteFoods.push("salmon");
+        console.log(favoriteFoods);
+
+
+        // #3
+        for (let i = 0; i < favoriteFoods.length; i++) {
+            console.log("Favorite Food " + (i + 1) + ": " + favoriteFoods[i]);
+        }
+
+        // #4
+        for (let i = 0; i < favoriteFoods.length; i++) {
+            if (i !== 1) {
+                console.log("Filtered List: " + favoriteFoods[i]);
+           }       
+        }
+
+        // #5 
+        let book = {
+            title: "Animal Farm",
+            author: "George Orwell",
+            yearPublished: 1945,
+            isAvailable: true
+        };
+        console.log("Book Title: " + book.title + ", Author: " + book.author);
+        if (book.isAvailable==true) {
+            console.log("This book is available for checkout.");
+        } else {
+            console.log("Sorry, this book is currently checked out.");
+        }
+
+        // #6
+        for (i = 2; i <= 20; i += 2) {
+            console.log(i);
+        }
+
+        // #7
+        let dieRoll = Math.floor(Math.random() * 6) + 1;
+        console.log(dieRoll);
+
+    </script>
+
+    
+</body>
+</html>
